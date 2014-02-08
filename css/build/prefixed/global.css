@@ -2342,6 +2342,14 @@ table pre {
   margin-left: 170px;
 }
 
+.content--wrap {
+  padding-left: 30px;
+}
+
+.radio--quiz {
+  display: block;
+}
+
 body,
 html {
   height: 100%;
