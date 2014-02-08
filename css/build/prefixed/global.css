@@ -2320,17 +2320,26 @@ table pre {
   height: 100%;
 }
 
+.logo {
+  font-size: 30px;
+  padding-bottom: 15px;
+  display: block;
+}
+
 .nav--site {
   width: 170px;
   height: 100%;
   background: #8ebaf4;
   position: fixed;
+  text-align: center;
+  padding-top: 15px;
 }
 
 .nav--site__link {
   display: block;
   width: 100%;
   height: 170px;
+  line-height: 170px;
 }
 
 .nav--site__link:hover {

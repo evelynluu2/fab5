@@ -1,20 +1,28 @@
 .wrap{
   height: 100%;
 }
+
+// Logo
+.logo{
+  font-size: 30px;
+  padding-bottom:15px;
+  display: block;
+}
+
 .nav--site{
   width: 170px;
   height: 100%;
   background: $lightBlue;
   position:fixed;
-}
-
-.nav--site li{
+  text-align: center;
+  padding-top:15px;
 }
 
 .nav--site__link{
   display: block;
   width: 100%;
   height: 170px;
+  line-height: 170px;
   &:hover{
     background: yellow;
   }
