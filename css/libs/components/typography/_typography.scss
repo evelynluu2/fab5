@@ -1,8 +1,8 @@
 /**
 * @desc         Base typography styles.
 * @name         Typography
-* @author       
-* @tested       
+* @author
+* @tested
 * @requires     variables.scss
 */
 
@@ -44,7 +44,7 @@ h6, .h6 {
 }
 
 h1, .h1 {
-  @include fontSize(20px);
+  @include fontSize(30px);
 }
 
 h2, .h2 {
@@ -68,7 +68,7 @@ h6, .h6 {
 }
 
 p {
-  @extend %baseSpacing;
+  //@extend %baseSpacing;
 }
 
 /* ==========================================================================

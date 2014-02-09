@@ -233,7 +233,7 @@ dt,
 dd,
 menu,
 ol,
-ul, ul li {
+ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -610,8 +610,8 @@ th {
 /**
 * @desc         Base typography styles.
 * @name         Typography
-* @author       
-* @tested       
+* @author
+* @tested
 * @requires     variables.scss
 */
 /* ==========================================================================
@@ -624,7 +624,7 @@ html {
 body {
   font-size: 14px;
   font-size: 0.875rem;
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   line-height: 1.5;
   color: #313131;
 }
@@ -633,7 +633,7 @@ body,
 input,
 select,
 textarea {
-  font-family: Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 /* ==========================================================================
@@ -649,8 +649,8 @@ h6, .h6 {
 }
 
 h1, .h1 {
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 30px;
+  font-size: 1.875rem;
 }
 
 h2, .h2 {
@@ -1758,7 +1758,7 @@ h2, .h2,
 h3, .h3,
 h4, .h4,
 h5, .h5,
-h6, .h6, p, .box, .listBordered, .listBulleted, .listInline, .listInlineDivider, .listOrdered, .media, .table, .form, .form .field {
+h6, .h6, .box, .listBordered, .listBulleted, .listInline, .listInlineDivider, .listOrdered, .media, .table, .form, .form .field {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
 }
@@ -1769,16 +1769,16 @@ table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, t
 }
 
 /* *
- * debug default spacing 
+ * debug default spacing
  * set $debug-spacing to true to visualize spacing and positioning
  */
 /* ==========================================================================
    Spacing helpers
    ========================================================================== */
 /**
- * Spacing helpers 
+ * Spacing helpers
  * Should be used to modify the default spacing between objects (not between nodes of the same object)
- * Please use judiciously. You want to be using defaults most of the time, these are exceptions! 
+ * Please use judiciously. You want to be using defaults most of the time, these are exceptions!
  * <type><location><size>
  *
  * p,m 				padding,margin
@@ -1787,7 +1787,7 @@ table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, t
  */
 /*
  * Can define your own spacing units, or calculate the units based on how many spacing sizes you want
- * 
+ *
  * @param $units - specific spacing units you want to use. Must go from small to large
  * e.g. @include whitespace((5px,10px,20px));
  *
@@ -2100,37 +2100,48 @@ table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, t
 }
 
 .logo {
-  font-size: 30px;
+  font-size: 20px;
   padding-bottom: 15px;
   display: block;
+  color: #667892;
+  border-bottom: 1px solid #343d4a;
 }
 
 .nav--site {
-  width: 170px;
+  width: 120px;
   height: 100%;
-  background: #8ebaf4;
+  background: #272e38;
   position: fixed;
   text-align: center;
   padding-top: 15px;
+}
+.nav--site li {
+  margin: 0;
+  padding: 0;
 }
 
 .nav--site__link {
   display: block;
   width: 100%;
-  height: 170px;
-  line-height: 170px;
+  height: 120px;
+  border-bottom: 1px solid #343d4a;
+  line-height: 130px;
+}
+.nav--site__link img {
+  width: 25%;
 }
 .nav--site__link:hover {
-  background: yellow;
+  background: #313a47;
 }
 
 .main-content {
   overflow: hidden;
-  margin-left: 170px;
+  margin-left: 120px;
+  width: 600px;
 }
 
 .content--wrap {
-  padding-left: 30px;
+  padding-left: 50px;
 }
 
 .radio--quiz {

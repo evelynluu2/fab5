@@ -1,11 +1,16 @@
 .main-content{
   overflow: hidden;
-  margin-left: 170px;
+  margin-left: $navLinkWidth;
+  width: 600px;
 }
 
 // THE QUIZ
 .content--wrap{
-  padding-left: 30px;
+  padding-left: 50px;
+}
+
+.header{
+  //font-size: 30px;
 }
 
 // ** Radio Button

@@ -25,7 +25,7 @@ table {
 }
 
 /* *
- * debug default spacing 
+ * debug default spacing
  * set $debug-spacing to true to visualize spacing and positioning
  */
 @if $debugSpacing {
@@ -48,9 +48,9 @@ table {
    ========================================================================== */
 
 /**
- * Spacing helpers 
+ * Spacing helpers
  * Should be used to modify the default spacing between objects (not between nodes of the same object)
- * Please use judiciously. You want to be using defaults most of the time, these are exceptions! 
+ * Please use judiciously. You want to be using defaults most of the time, these are exceptions!
  * <type><location><size>
  *
  * p,m 				padding,margin
@@ -77,7 +77,7 @@ $whitespace-keys: (p padding, m margin, a '', v -top -bottom, h -left -right, t 
 
 /*
  * Can define your own spacing units, or calculate the units based on how many spacing sizes you want
- * 
+ *
  * @param $units - specific spacing units you want to use. Must go from small to large
  * e.g. @include whitespace((5px,10px,20px));
  *
