@@ -27,25 +27,63 @@
     <section class="main-content">
       <div class="content--wrap">
         <h3 class="header h1">The Quiz</h3>
-        <form action="#">
-          <p class="">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat, quibusdam officiis facere necessitatibus aperiam laboriosam quis placeat vitae aliquam pariatur!</p>
-          <label for="radio1" class="radio--quiz">
-            <input type="radio" name="q1" id="radio1">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga.
-          </label>
-          <label for="radio2" class="radio--quiz">
-            <input type="radio" name="q1" id="radio2">
-            Lorem ipsum dolor sit amet, consectetur.
-          </label>
-          <label for="radio3" class="radio--quiz">
-            <input type="radio" name="q1" id="radio3">
-            Lorem ipsum dolor sit amet, consectetur. Lorem
-          </label>
+
+        <!-- Form  -->
+        <form action="#" id="quizForm" name="quizForm">
+          <ul>
+            <li class="question--wrap">
+              <p class="question">Would you prefer to work by yourself?</p>
+
+              <label for="q1" class="radio--quiz">
+                <input type="radio" name="q1" id="q1" value="CS BIM">
+                Yes
+              </label>
+
+              <label for="q2" class="radio--quiz">
+                <input type="radio" name="q1" id="q2" value="CSE INF">
+                No
+              </label>
+
+            </li>
+
+            <li class="question--wrap">
+              <p class="question">Do you like working with people?</p>
+
+              <label for="q3" class="radio--quiz">
+                <input type="radio" name="q2" id="q3">
+                Yes
+              </label>
+
+              <label for="q4" class="radio--quiz">
+                <input type="radio" name="q2" id="q4">
+                No
+              </label>
+
+            </li>
+
+            <li class="question--wrap">
+              <p class="question">Are you a leader?</p>
+
+              <label for="q5" class="radio--quiz">
+                <input type="radio" name="q3" id="q5">
+                Yes
+              </label>
+
+              <label for="q6" class="radio--quiz">
+                <input type="radio" name="q3" id="q6">
+                No
+              </label>
+
+            </li>
+          </ul>
 
         </form>
       </div>
     </section>
 
   </div>
+
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="js/build/production.min.js"></script>
 </body>
 </html>
