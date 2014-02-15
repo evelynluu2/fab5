@@ -15,6 +15,9 @@ var $radioButtons, //Obtain all the radio input from the Quiz
   //When user submits the quiz
   $("#quizForm").submit(function(event) {
 
+    //Clear all answers
+    $answers = [];
+
     //Obtain all radio buttons
     $radioButtons = $("input[type='radio']");
 
@@ -34,35 +37,35 @@ var $radioButtons, //Obtain all the radio input from the Quiz
     $.each($answers, function(k,v) {
 
       if(v.search('CSE') >= 0){
-        $counts.CSE += 1;
+        $counts.CSE++;
       }
 
-      if(v.search('CS') >= 0){
-        $counts.CS += 1;
+      if(v.search(/CS\b/g) >= 0){
+        $counts.CS++;
       }
 
       if(v.search('BIM') >= 0){
-        $counts.BIM += 1;
+        $counts.BIM++;
       }
 
       if(v.search('INF') >= 0){
-        $counts.INF += 1;
+        $counts.INF++;
       }
 
-      if(v.search('SE') >= 0){
-        $counts.SE += 1;
+      if(v.search(/^SE\b/g) >= 0){
+        $counts.SE++;
       }
 
       if(v.search('CGS') >= 0){
-        $counts.CGS += 1;
+        $counts.CGS++;
       }
 
     });
 
     //Obtain the major with highest count
     for(var k in $counts){
-      if($counts[k] > $compareNumber){
-        $compareNumber = $counts[k];
+      if($counts[k] > $highestCount){
+        $highestCount = $counts[k];
         $finalMajor = k;
       }
       console.log(k + ' : ' + $counts[k]);

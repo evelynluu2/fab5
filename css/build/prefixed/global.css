@@ -2319,7 +2319,7 @@ table pre {
 }
 
 .logo {
-  font-size: 20px;
+  font-size: 16px;
   padding-bottom: 15px;
   display: block;
   color: #667892;
@@ -2327,7 +2327,7 @@ table pre {
 }
 
 .nav--site {
-  width: 120px;
+  width: 80px;
   height: 100%;
   background: #272e38;
   position: fixed;
@@ -2343,13 +2343,13 @@ table pre {
 .nav--site__link {
   display: block;
   width: 100%;
-  height: 120px;
+  height: 80px;
   border-bottom: 1px solid #343d4a;
-  line-height: 130px;
+  line-height: 90px;
 }
 
 .nav--site__link img {
-  width: 25%;
+  width: 30%;
 }
 
 .nav--site__link:hover {
@@ -2358,16 +2358,41 @@ table pre {
 
 .main-content {
   overflow: hidden;
-  margin-left: 120px;
-  width: 600px;
+  margin-left: 80px;
+  width: 70%;
 }
 
 .content--wrap {
   padding-left: 50px;
 }
 
+.question {
+  font-size: 20px;
+  font-size: 1.25rem;
+}
+
 .radio--quiz {
+  font-size: 16px;
+  font-size: 1rem;
   display: block;
+  border: 1px solid  #dadada;
+  cursor: pointer;
+  padding: 15px 18px;
+  margin-bottom: 10px;
+}
+
+.radio--quiz:hover {
+  background: #a1acbd;
+}
+
+input[type="radio"] {
+  text-indent: -9999px;
+  display: none;
+}
+
+input[type="radio"]:checked + .radio--quiz {
+  background: #272e38;
+  color: white;
 }
 
 body,

@@ -1,7 +1,7 @@
 .main-content{
   overflow: hidden;
   margin-left: $navLinkWidth;
-  width: 600px;
+  width: 70%;
 }
 
 // THE QUIZ
@@ -13,7 +13,33 @@
   //font-size: 30px;
 }
 
+.question{
+  @include fontSize(20px);
+}
+
 // ** Radio Button
 .radio--quiz{
+  @include fontSize(16px);
   display:block;
+  border: 1px solid  #dadada;
+  cursor:pointer;
+  padding: 15px 18px;
+  margin-bottom: 10px;
+  &:hover{
+    background: lighten($spaceGrey,50%);
+  }
 }
+
+
+input[type="radio"]{
+  text-indent: -9999px;
+  display:none;
+}
+
+input[type="radio"]:checked + .radio--quiz {
+  background: $spaceGrey;
+  color: white;
+}
+
+
+
