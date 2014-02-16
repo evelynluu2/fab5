@@ -1,6 +1,7 @@
 .main-content{
   overflow: hidden;
   margin-left: $navLinkWidth;
+  padding-bottom: 60px;
   width: 50%;
 }
 
@@ -32,7 +33,11 @@
   cursor:pointer;
   padding: 12px 18px;
   margin-bottom: 10px;
+  transition: background 0.05s ease-in,
+              color 0.05s ease-in;
   &:hover{
+    transition: background 0.05s ease-in,
+                color 0.05s ease-in;;
     background: lighten($radioButtonBgColor,20%);
     border: 1px solid lighten($radioButtonBgColor,20%);
     color: white;

@@ -1,9 +1,9 @@
 /**
 * @desc         Base button styles.
 * @name         Button
-* @author       
-* @tested       
-* @requires     
+* @author
+* @tested
+* @requires
 */
 
 //Resets button style
@@ -14,11 +14,11 @@ button {
 
 /* Base button */
 .btn {
-  padding: .5em 1em;
+  padding: 0.8em 1.8em;
   margin: 0;
   display: inline-block;
   font-weight: normal;
-  @include fontSize(13px);
+  @include fontSize(16px);
   text-decoration: none;
   cursor: pointer;
   border: 0;

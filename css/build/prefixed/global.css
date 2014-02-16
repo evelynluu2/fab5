@@ -1855,9 +1855,9 @@ ul > li {
 /**
 * @desc         Base button styles.
 * @name         Button
-* @author       
-* @tested       
-* @requires     
+* @author
+* @tested
+* @requires
 */
 
 button {
@@ -1868,12 +1868,12 @@ button {
 /* Base button */
 
 .btn {
-  padding: .5em 1em;
+  padding: 0.8em 1.8em;
   margin: 0;
   display: inline-block;
   font-weight: normal;
-  font-size: 13px;
-  font-size: 0.8125rem;
+  font-size: 16px;
+  font-size: 1rem;
   text-decoration: none;
   cursor: pointer;
   border: 0;
@@ -1887,9 +1887,8 @@ button {
 */
 
 .btnDefault {
-  border: 1px solid #999999;
-  background: #dddddd;
-  border-radius: 3px;
+  background: #272e38;
+  color: white;
 }
 
 /* ==========================================================================
@@ -2358,6 +2357,7 @@ table pre {
 .main-content {
   overflow: hidden;
   margin-left: 80px;
+  padding-bottom: 60px;
   width: 50%;
 }
 
@@ -2385,9 +2385,13 @@ table pre {
   cursor: pointer;
   padding: 12px 18px;
   margin-bottom: 10px;
+  -webkit-transition: background 0.05s ease-in, color 0.05s ease-in;
+  transition: background 0.05s ease-in, color 0.05s ease-in;
 }
 
 .radio--quiz:hover {
+  -webkit-transition: background 0.05s ease-in, color 0.05s ease-in;
+  transition: background 0.05s ease-in, color 0.05s ease-in;
   background: #89dede;
   border: 1px solid #89dede;
   color: white;
