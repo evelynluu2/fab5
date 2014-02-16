@@ -2113,7 +2113,6 @@ table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, t
   background: #272e38;
   position: fixed;
   text-align: center;
-  padding-top: 15px;
 }
 .nav--site li {
   margin: 0;
@@ -2137,16 +2136,23 @@ table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, t
 .main-content {
   overflow: hidden;
   margin-left: 80px;
-  width: 70%;
+  width: 50%;
 }
 
 .content--wrap {
   padding-left: 50px;
 }
 
+.question--wrap {
+  padding: 25px 50px 40px 50px;
+  background: #f5f5f5;
+  margin-bottom: 40px;
+}
+
 .question {
   font-size: 20px;
   font-size: 1.25rem;
+  font-weight: bold;
 }
 
 .radio--quiz {
@@ -2155,11 +2161,13 @@ table h1, table h2, table h3, table h4, table h5, table h6, table p, table ul, t
   display: block;
   border: 1px solid  #dadada;
   cursor: pointer;
-  padding: 15px 18px;
+  padding: 12px 18px;
   margin-bottom: 10px;
 }
 .radio--quiz:hover {
-  background: #a1acbd;
+  background: #89dede;
+  border: 1px solid #89dede;
+  color: white;
 }
 
 input[type="radio"] {
@@ -2168,7 +2176,8 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + .radio--quiz {
-  background: #272e38;
+  background: #39c7c8;
+  border: 1px solid #39c7c8;
   color: white;
 }
 

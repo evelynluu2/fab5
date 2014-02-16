@@ -1,12 +1,18 @@
 .main-content{
   overflow: hidden;
   margin-left: $navLinkWidth;
-  width: 70%;
+  width: 50%;
 }
 
 // THE QUIZ
 .content--wrap{
   padding-left: 50px;
+}
+
+.question--wrap{
+  padding: 25px 50px 40px 50px;
+  background: #f5f5f5;
+  margin-bottom: 40px;
 }
 
 .header{
@@ -15,6 +21,7 @@
 
 .question{
   @include fontSize(20px);
+  font-weight: bold;
 }
 
 // ** Radio Button
@@ -23,10 +30,12 @@
   display:block;
   border: 1px solid  #dadada;
   cursor:pointer;
-  padding: 15px 18px;
+  padding: 12px 18px;
   margin-bottom: 10px;
   &:hover{
-    background: lighten($spaceGrey,50%);
+    background: lighten($radioButtonBgColor,20%);
+    border: 1px solid lighten($radioButtonBgColor,20%);
+    color: white;
   }
 }
 
@@ -37,7 +46,8 @@ input[type="radio"]{
 }
 
 input[type="radio"]:checked + .radio--quiz {
-  background: $spaceGrey;
+  background: $radioButtonBgColor;
+  border: 1px solid $radioButtonBgColor;
   color: white;
 }
 
