@@ -2392,8 +2392,8 @@ table pre {
 .radio--quiz:hover {
   -webkit-transition: background 0.05s ease-in, color 0.05s ease-in;
   transition: background 0.05s ease-in, color 0.05s ease-in;
-  background: #89dede;
-  border: 1px solid #89dede;
+  background: #8fdfe9;
+  border: 1px solid #8fdfe9;
   color: white;
 }
 
@@ -2403,8 +2403,8 @@ input[type="radio"] {
 }
 
 input[type="radio"]:checked + .radio--quiz {
-  background: #39c7c8;
-  border: 1px solid #39c7c8;
+  background: #39c7d9;
+  border: 1px solid #39c7d9;
   color: white;
 }
 
