@@ -11,7 +11,7 @@
 }
 
 .question--wrap{
-  padding: 25px 50px 40px 50px;
+  padding: 20px 50px 40px 50px;
   background: #f5f5f5;
   margin-bottom: 40px;
 }
@@ -21,7 +21,7 @@
 }
 
 .question{
-  @include fontSize(20px);
+  @include fontSize(18px);
   font-weight: bold;
 }
 
@@ -31,7 +31,7 @@
   display:block;
   border: 1px solid  #dadada;
   cursor:pointer;
-  padding: 12px 18px;
+  padding: 10px 18px;
   margin-bottom: 10px;
   transition: background 0.05s ease-in,
               color 0.05s ease-in;
@@ -55,6 +55,8 @@ input[type="radio"]:checked + .radio--quiz {
   border: 1px solid $radioButtonBgColor;
   color: white;
 }
+
+
 
 
 
