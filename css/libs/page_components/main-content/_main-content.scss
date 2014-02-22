@@ -8,6 +8,7 @@
 // THE QUIZ
 .content--wrap{
   padding-left: 50px;
+  position: relative;
 }
 
 .question--wrap{
@@ -54,6 +55,21 @@ input[type="radio"]:checked + .radio--quiz {
   background: $radioButtonBgColor;
   border: 1px solid $radioButtonBgColor;
   color: white;
+}
+
+
+//Result Container
+.resultContainer{
+  opacity: 0;
+  clear: both;
+
+  .result{
+    @include fontSize(18px);
+    padding: 20px 0;
+    background: #f5f5f5;
+    display: block;
+    text-align: center;
+  }
 }
 
 

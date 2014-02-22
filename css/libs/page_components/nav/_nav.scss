@@ -1,4 +1,5 @@
 .wrap{
+  @include clearfix-me(facebook);
   height: 100%;
 }
 

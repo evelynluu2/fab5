@@ -12,6 +12,9 @@ var $radioButtons, //Obtain all the radio input from the Quiz
     $counts.SE = 0;
     $counts.CGS = 0;
 
+var $resultContainer = $('.resultContainer');
+
+
   //When user submits the quiz
   $("#quizForm").submit(function(event) {
 
@@ -52,7 +55,7 @@ var $radioButtons, //Obtain all the radio input from the Quiz
         $counts.INF++;
       }
 
-      if(v.search(/^SE\b/g) >= 0){
+      if(v.search(/\bSE\b/g) >= 0){
         $counts.SE++;
       }
 
@@ -70,6 +73,17 @@ var $radioButtons, //Obtain all the radio input from the Quiz
       }
       console.log(k + ' : ' + $counts[k]);
     }
+
+
+
+    //Display the final major by fading the quiz.
+    $('#quizForm').fadeOut(100);
+
+    $('.result').html("Your recommended major is " + $finalMajor);
+    $resultContainer.animate({
+      opacity: 1
+    },500);
+
 
     console.log($finalMajor);
 
