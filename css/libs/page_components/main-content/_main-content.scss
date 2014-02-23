@@ -2,7 +2,11 @@
   overflow: hidden;
   margin-left: $navLinkWidth;
   padding-bottom: 60px;
-  width: 50%;
+  padding-right: 55px;
+  min-height: 1500px;
+  width: 43%;
+  float: left;
+  border-right: 1px solid darken($pageColor, 5%);
 }
 
 // THE QUIZ
@@ -13,7 +17,7 @@
 
 .question--wrap{
   padding: 20px 50px 40px 50px;
-  background: #f5f5f5;
+  background: lighten($pageColor, 5%);
   margin-bottom: 40px;
 }
 
@@ -39,8 +43,8 @@
   &:hover{
     transition: background 0.05s ease-in,
                 color 0.05s ease-in;;
-    background: lighten($radioButtonBgColor,20%);
-    border: 1px solid lighten($radioButtonBgColor,20%);
+    background: lighten($radioButtonBgColor,10%);
+    border: 1px solid lighten($radioButtonBgColor,10%);
     color: white;
   }
 }
@@ -73,6 +77,25 @@ input[type="radio"]:checked + .radio--quiz {
 }
 
 
+//-------- DESCRIPTION
+
+.description{
+  width: 39%;
+  float: right;
+  margin-top: 100px;
+  padding-right: 70px;
+  opacity: 0.4;
+
+  .header{
+    @include fontSize(20px);
+    margin-bottom:0;
+  }
+
+  .para{
+    @include fontSize(16px);
+    line-height: 2.0;
+  }
+}
 
 
 

@@ -90,3 +90,25 @@ var $resultContainer = $('.resultContainer');
     event.preventDefault();
   });
 
+
+// ---------------------------
+// Hover over description
+// ---------------------------
+
+
+var $description = $('.description');
+
+$description.hover(
+  function(){
+    $(this).animate({
+      opacity: 1
+    },200);
+  },
+
+  function(){
+    $(this).animate({
+      opacity: 0.3
+    },200);
+  }
+);
+

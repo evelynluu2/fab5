@@ -22,6 +22,7 @@ $lightGrey: #999;
 $spaceGrey: #272E38;
 $lightGreen: #B6F9B2;
 $green: #6DF465;
+$lightBrown: #EEEBE5;
 
 /* Border radius */
 $borderRadiusDefault: 6px;
@@ -45,7 +46,7 @@ $baseLineHeight: 1.5;
 //must be unitless
 $baseSpacing: $baseLineHeight+em;
 //vertical spacing
-$baseTextColor: $black;
+$baseTextColor: #403043;
 
 
 /* Type Color */
@@ -118,5 +119,7 @@ $footerBorder: $lightGrey;
 
 // My variables
 $navLinkWidth: 80px;
-$radioButtonBgColor: #39C7C1;
+$pageColor: $lightBrown;
+$radioButtonBgColor: #E29876;
+
 
