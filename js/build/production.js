@@ -77,11 +77,7 @@ var $resultContainer = $('.resultContainer');
 
 
     //Display the final major by fading the quiz.
-<<<<<<< HEAD
     $('#quizForm').fadeOut(100);
-=======
-    $('#quizForm').fadeOut(150);
->>>>>>> layout
 
     $('.result').html("Your recommended major is " + $finalMajor);
     $resultContainer.animate({
