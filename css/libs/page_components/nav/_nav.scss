@@ -1,5 +1,7 @@
 .wrap{
+  @include clearfix-me(facebook);
   height: 100%;
+  background: $pageColor;
 }
 
 // Logo
