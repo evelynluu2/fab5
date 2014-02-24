@@ -2419,11 +2419,10 @@ input[type="radio"]:checked + .radio--quiz {
 }
 
 .resultContainer {
-  opacity: 0;
   clear: both;
 }
 
-.resultContainer .result li {
+.resultContainer .result a {
   font-size: 18px;
   font-size: 1.125rem;
   padding: 15px 0;
@@ -2431,11 +2430,13 @@ input[type="radio"]:checked + .radio--quiz {
   display: block;
   text-align: center;
   margin: 1px 0;
+  display: block;
 }
 
-.resultContainer .result li.standOut {
+.resultContainer .result a.standOut {
   background: #3B72BC;
   color: white;
+  display: block;
 }
 
 .description {

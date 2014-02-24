@@ -104,9 +104,9 @@ var $resultContainer = $('.resultContainer');
 
 
       if($highestCount === parseInt($counts[j]))
-        $('.result').append("<li class='standOut'>" + major + " : " + percentage + " %");
+        $('.result').append("<li><a href='#' class='standOut'>" + major + " : " + percentage + " % </a></li>");
       else
-        $('.result').append("<li>" + major + " : " + percentage + " %");
+        $('.result').append("<li><a href='#'>" + major + " : " + percentage + " % </a></li>");
 
     }
 
