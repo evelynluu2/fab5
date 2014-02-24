@@ -66,12 +66,18 @@ input[type="radio"]:checked + .radio--quiz {
   opacity: 0;
   clear: both;
 
-  .result{
+  .result li{
     @include fontSize(18px);
-    padding: 20px 0;
+    padding: 15px 0;
     background: #f5f5f5;
     display: block;
     text-align: center;
+    margin: 1px 0;
+  }
+
+  .result li.standOut{
+    background: #3B72BC;
+    color: white;
   }
 }
 

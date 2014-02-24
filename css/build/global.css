@@ -2196,13 +2196,18 @@ input[type="radio"]:checked + .radio--quiz {
   opacity: 0;
   clear: both;
 }
-.resultContainer .result {
+.resultContainer .result li {
   font-size: 18px;
   font-size: 1.125rem;
-  padding: 20px 0;
+  padding: 15px 0;
   background: #f5f5f5;
   display: block;
   text-align: center;
+  margin: 1px 0;
+}
+.resultContainer .result li.standOut {
+  background: #3B72BC;
+  color: white;
 }
 
 .description {
