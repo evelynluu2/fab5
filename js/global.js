@@ -2,7 +2,8 @@ var $radioButtons, //Obtain all the radio input from the Quiz
     $answers = [], //Obtain all the value of radio input
     $counts = [], //Represent the counts for each major
     $highestCount = 0, //The highest count
-    $finalMajor; //The major with highest count
+    $finalMajor, //The major with highest count
+    $total = 0; //The total amount of counts
 
     //Define Majors w/ corresponding counts
     $counts.CSE = 0;
@@ -11,6 +12,7 @@ var $radioButtons, //Obtain all the radio input from the Quiz
     $counts.INF = 0;
     $counts.SE = 0;
     $counts.CGS = 0;
+
 
 var $resultContainer = $('.resultContainer');
 
@@ -41,45 +43,77 @@ var $resultContainer = $('.resultContainer');
 
       if(v.search('CSE') >= 0){
         $counts.CSE++;
+        $total++;
       }
 
       if(v.search(/CS\b/g) >= 0){
         $counts.CS++;
+        $total++;
       }
 
       if(v.search('BIM') >= 0){
         $counts.BIM++;
+        $total++;
       }
 
       if(v.search('INF') >= 0){
         $counts.INF++;
+        $total++;
       }
 
       if(v.search(/\bSE\b/g) >= 0){
         $counts.SE++;
+        $total++;
       }
 
       if(v.search('CGS') >= 0){
         $counts.CGS++;
+        $total++;
       }
 
     });
 
     //Obtain the major with highest count
     for(var k in $counts){
+
       if($counts[k] > $highestCount){
-        $highestCount = $counts[k];
+        $highestCount = parseInt($counts[k]);
         $finalMajor = k;
       }
-      console.log(k + ' : ' + $counts[k]);
+
     }
 
+    for(var j in $counts){
+
+      var percentage = ((parseInt($counts[j]) / $total) * 100).toFixed(2);
+
+      var major = "";
+
+      if(j == "CS")
+        major = "Computer Science";
+      else if(j == "CGS")
+        major = "Computer Game Science";
+      else if(j == "SE")
+        major = "Software Engineer";
+      else if(j == "INF")
+        major = "Informatics";
+      else if(j == "CSE")
+        major = "Computer Science and Engineering";
+      else if(j == "BIM")
+        major = "Business Information Management";
+
+
+      if($highestCount === parseInt($counts[j]))
+        $('.result').append("<li><a href='#' class='standOut'>" + major + " : " + percentage + " % </a></li>");
+      else
+        $('.result').append("<li><a href='#'>" + major + " : " + percentage + " % </a></li>");
+
+    }
 
 
     //Display the final major by fading the quiz.
     $('#quizForm').fadeOut(100);
 
-    $('.result').html("Your recommended major is " + $finalMajor);
     $resultContainer.animate({
       opacity: 1
     },500);
